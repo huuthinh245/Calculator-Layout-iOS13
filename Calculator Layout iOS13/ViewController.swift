@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var btnSeven: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnSeven.addGestureRecognizer(UITapGestureRecognizer(target: self, action:#selector(sevenPressed)))
         // Do any additional setup after loading the view.
     }
-
+    @objc func sevenPressed(sender:UITapGestureRecognizer) {
+        print("7")
+    }
 
 }
 
